@@ -16,4 +16,4 @@ RUN set -ex && \
 WORKDIR /opt/drinkcoin
 USER drinkcoin
 
-CMD ["/opt/drinkcoind", "--enable-cors", "--enable-blockexplorer", "--data-dir", "/data"]
+CMD ["/opt/drinkcoind", "--rpc-bind-ip", "0.0.0.0", "--enable-cors", "--enable-blockexplorer", "--data-dir", "/data"]
