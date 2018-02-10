@@ -15,7 +15,7 @@ RUN set -ex && \
     chown drinkcoin:drinkcoin /data /wallet && \
     chmod og+rwx /data /wallet
 
-ADD entrypoint.sh /opt/
+COPY entrypoint.sh /opt/
 
 WORKDIR /opt
 USER drinkcoin
